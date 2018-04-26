@@ -1,0 +1,829 @@
+2017-07-12 22:10:16.207 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.AppTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 22:10:16.304 [main] INFO  o.s.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@7b25cf56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f4f5643, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@41a881cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1de199c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@46355d3a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@597baed8]
+2017-07-12 22:10:18.049 [main] INFO  wx.AppTest - Starting AppTest on hqh-PC with PID 5008 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 22:10:18.049 [main] DEBUG wx.AppTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 22:10:18.050 [main] INFO  wx.AppTest - No active profile set, falling back to default profiles: default
+2017-07-12 22:10:19.009 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a2f096: startup date [Wed Jul 12 22:10:19 CST 2017]; root of context hierarchy
+2017-07-12 22:10:19.330 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 22:10:20.714 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 22:10:22.467 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 22:10:22.654 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 22:10:22.656 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 22:10:22.821 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 22:10:22.822 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3813 ms
+2017-07-12 22:10:23.363 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 22:10:23.377 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 22:10:23.377 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 22:10:23.378 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 22:10:23.378 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 22:10:23.378 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 22:10:23.558 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 22:10:24.213 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a2f096: startup date [Wed Jul 12 22:10:19 CST 2017]; root of context hierarchy
+2017-07-12 22:10:24.335 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 22:10:24.337 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 22:10:24.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 22:10:24.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 22:10:24.340 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 22:10:24.349 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 22:10:24.350 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 22:10:24.430 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 22:10:24.430 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 22:10:24.498 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 22:10:24.548 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 22:10:25.846 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 22:10:25.860 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 22:10:25.951 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 22:10:25.978 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 22:10:25.987 [main] INFO  wx.AppTest - Started AppTest in 8.986 seconds (JVM running for 14.571)
+2017-07-12 22:10:27.088 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@50a2f096: startup date [Wed Jul 12 22:10:19 CST 2017]; root of context hierarchy
+2017-07-12 22:10:52.152 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.AppTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 22:10:52.179 [main] INFO  o.s.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@67e1a8e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@410163f6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@4249ccd1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b25cf56, org.springframework.test.context.transaction.TransactionalTestExecutionListener@6f4f5643, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@41a881cc]
+2017-07-12 22:10:52.838 [main] INFO  wx.AppTest - Starting AppTest on hqh-PC with PID 7128 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 22:10:52.839 [main] DEBUG wx.AppTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 22:10:52.839 [main] INFO  wx.AppTest - No active profile set, falling back to default profiles: default
+2017-07-12 22:10:53.289 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ee0880: startup date [Wed Jul 12 22:10:53 CST 2017]; root of context hierarchy
+2017-07-12 22:10:53.301 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 22:10:54.875 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 22:10:56.002 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 22:10:56.019 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 22:10:56.020 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 22:10:56.262 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 22:10:56.262 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2974 ms
+2017-07-12 22:10:56.765 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 22:10:56.765 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 22:10:56.766 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 22:10:56.766 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 22:10:56.766 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 22:10:56.766 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 22:10:56.892 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 22:10:57.345 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ee0880: startup date [Wed Jul 12 22:10:53 CST 2017]; root of context hierarchy
+2017-07-12 22:10:57.475 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 22:10:57.477 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 22:10:57.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 22:10:57.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 22:10:57.481 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 22:10:57.491 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 22:10:57.492 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 22:10:57.573 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 22:10:57.574 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 22:10:57.646 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 22:10:57.700 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 22:10:58.723 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 22:10:58.794 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 22:10:58.815 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 22:10:58.844 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 22:10:58.854 [main] INFO  wx.AppTest - Started AppTest in 6.487 seconds (JVM running for 7.624)
+2017-07-12 22:11:01.240 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"EHWcLbvleQhnO1W5OFyIbrDZF29_D2sB-X2ydV1yoknIUQfLKFMoSYNkORiA0C8Vx6BY6zfvE_a3GHBhW6ZTSafRzI6GlTXQnDs7oA4GoZZsd27eTdthDUo2fDizhUBdRPJaABAUSM","expires_in":7200}
+2017-07-12 22:11:01.254 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=EHWcLbvleQhnO1W5OFyIbrDZF29_D2sB-X2ydV1yoknIUQfLKFMoSYNkORiA0C8Vx6BY6zfvE_a3GHBhW6ZTSafRzI6GlTXQnDs7oA4GoZZsd27eTdthDUo2fDizhUBdRPJaABAUSM
+2017-07-12 22:11:01.256 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-12 22:11:02.322 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@39ee0880: startup date [Wed Jul 12 22:10:53 CST 2017]; root of context hierarchy
+2017-07-12 23:18:54.194 [main] INFO  com.asynclife.wx.App - Starting App on hqh-PC with PID 3792 (E:\source\practice-java\weixin\target\classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:18:54.225 [main] DEBUG com.asynclife.wx.App - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:18:54.225 [main] INFO  com.asynclife.wx.App - No active profile set, falling back to default profiles: default
+2017-07-12 23:18:54.698 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c4609b6: startup date [Wed Jul 12 23:18:54 CST 2017]; root of context hierarchy
+2017-07-12 23:18:54.723 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:18:56.340 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 23:18:57.479 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 23:18:57.495 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 23:18:57.497 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 23:18:57.687 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 23:18:57.688 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2990 ms
+2017-07-12 23:18:58.228 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 23:18:58.229 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 23:18:58.229 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 23:18:58.229 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 23:18:58.229 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 23:18:58.229 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 23:18:58.348 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:18:58.805 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c4609b6: startup date [Wed Jul 12 23:18:54 CST 2017]; root of context hierarchy
+2017-07-12 23:18:58.950 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:18:58.951 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 23:18:58.956 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 23:18:58.956 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 23:18:58.956 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 23:18:58.967 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:18:58.967 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 23:18:59.040 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:18:59.041 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:18:59.124 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 23:18:59.167 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:19:00.379 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-07-12 23:19:00.453 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:19:00.463 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 23:19:00.490 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 23:19:00.518 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 23:19:00.529 [main] INFO  com.asynclife.wx.App - Started App in 6.847 seconds (JVM running for 7.65)
+2017-07-12 23:19:39.763 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 23:19:39.763 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 23:19:39.809 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2017-07-12 23:19:39.916 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=t, vlaue=[1]
+2017-07-12 23:19:39.955 [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-07-12 23:19:40.184 [http-nio-80-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2017-07-12 23:19:40.184 [http-nio-80-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-07-12 23:19:40.184 [http-nio-80-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-07-12 23:19:40.184 [http-nio-80-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-07-12 23:19:40.191 [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2017-07-12 23:19:40.191 [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-07-12 23:19:41.369 [http-nio-80-exec-2] ERROR com.asynclife.wx.filter.SecurityFilter - No sinature in request, parameter map is empty!
+2017-07-12 23:20:21.393 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.AppTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 23:20:21.421 [main] INFO  o.s.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@4249ccd1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b25cf56, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6f4f5643, org.springframework.test.context.support.DirtiesContextTestExecutionListener@41a881cc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1de199c1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@46355d3a]
+2017-07-12 23:20:22.197 [main] INFO  wx.AppTest - Starting AppTest on hqh-PC with PID 7164 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:20:22.197 [main] DEBUG wx.AppTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:20:22.197 [main] INFO  wx.AppTest - No active profile set, falling back to default profiles: default
+2017-07-12 23:20:22.748 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6be69671: startup date [Wed Jul 12 23:20:22 CST 2017]; root of context hierarchy
+2017-07-12 23:20:22.790 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:20:24.044 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 23:20:25.187 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 23:20:25.204 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 23:20:25.206 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 23:20:25.340 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 23:20:25.340 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2593 ms
+2017-07-12 23:20:25.851 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 23:20:25.852 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 23:20:25.852 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 23:20:25.852 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 23:20:25.852 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 23:20:25.852 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 23:20:25.982 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:20:26.440 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6be69671: startup date [Wed Jul 12 23:20:22 CST 2017]; root of context hierarchy
+2017-07-12 23:20:26.568 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:20:26.569 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 23:20:26.573 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 23:20:26.574 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 23:20:26.574 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 23:20:26.585 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:20:26.586 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 23:20:26.671 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:20:26.672 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:20:26.743 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 23:20:26.802 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:20:27.875 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:27.889 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:27.932 [main] ERROR org.apache.coyote.http11.Http11NioProtocol - Failed to start end point associated with ProtocolHandler ["http-nio-80"]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:765)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:473)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:194)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:151)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+2017-07-12 23:20:27.991 [main] ERROR org.apache.catalina.core.StandardService - Failed to start connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:153)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:239)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:194)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:151)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	... 38 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:444)
+	at sun.nio.ch.Net.bind(Net.java:436)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:340)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:765)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:473)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:986)
+	... 39 common frames omitted
+2017-07-12 23:20:28.006 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:28.006 [main] INFO  org.apache.catalina.core.StandardService - Stopping service Tomcat
+2017-07-12 23:20:28.190 [main] INFO  org.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2017-07-12 23:20:28.191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:28.191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:28.194 [main] ERROR org.springframework.boot.SpringApplication - Application startup failed
+org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat servlet container
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:165)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:159)
+	... 35 common frames omitted
+2017-07-12 23:20:28.198 [main] INFO  o.s.b.logging.ClasspathLoggingApplicationListener - Application failed to start with classpath: [file:/E:/source/practice-java/weixin/target/test-classes/, file:/E:/source/practice-java/weixin/target/classes/, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-web/1.3.3.RELEASE/spring-boot-starter-web-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter/1.3.3.RELEASE/spring-boot-starter-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot/1.3.3.RELEASE/spring-boot-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-autoconfigure/1.3.3.RELEASE/spring-boot-autoconfigure-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-logging/1.3.3.RELEASE/spring-boot-starter-logging-1.3.3.RELEASE.jar, file:/E:/repos/maven/ch/qos/logback/logback-classic/1.1.5/logback-classic-1.1.5.jar, file:/E:/repos/maven/ch/qos/logback/logback-core/1.1.5/logback-core-1.1.5.jar, file:/E:/repos/maven/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.jar, file:/E:/repos/maven/org/slf4j/log4j-over-slf4j/1.7.16/log4j-over-slf4j-1.7.16.jar, file:/E:/repos/maven/org/yaml/snakeyaml/1.16/snakeyaml-1.16.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-tomcat/1.3.3.RELEASE/spring-boot-starter-tomcat-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/apache/tomcat/embed/tomcat-embed-core/8.0.32/tomcat-embed-core-8.0.32.jar, file:/E:/repos/maven/org/apache/tomcat/embed/tomcat-embed-el/8.0.32/tomcat-embed-el-8.0.32.jar, file:/E:/repos/maven/org/apache/tomcat/embed/tomcat-embed-logging-juli/8.0.32/tomcat-embed-logging-juli-8.0.32.jar, file:/E:/repos/maven/org/apache/tomcat/embed/tomcat-embed-websocket/8.0.32/tomcat-embed-websocket-8.0.32.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-validation/1.3.3.RELEASE/spring-boot-starter-validation-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/hibernate/hibernate-validator/5.2.4.Final/hibernate-validator-5.2.4.Final.jar, file:/E:/repos/maven/org/jboss/logging/jboss-logging/3.3.0.Final/jboss-logging-3.3.0.Final.jar, file:/E:/repos/maven/com/fasterxml/classmate/1.1.0/classmate-1.1.0.jar, file:/E:/repos/maven/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.jar, file:/E:/repos/maven/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5.jar, file:/E:/repos/maven/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.jar, file:/E:/repos/maven/org/springframework/spring-web/4.2.5.RELEASE/spring-web-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE.jar, file:/E:/repos/maven/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/E:/repos/maven/org/springframework/spring-beans/4.2.5.RELEASE/spring-beans-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-context/4.2.5.RELEASE/spring-context-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-webmvc/4.2.5.RELEASE/spring-webmvc-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-expression/4.2.5.RELEASE/spring-expression-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-redis/1.3.3.RELEASE/spring-boot-starter-redis-1.3.3.RELEASE.jar, file:/E:/repos/maven/org/springframework/data/spring-data-redis/1.6.4.RELEASE/spring-data-redis-1.6.4.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-tx/4.2.5.RELEASE/spring-tx-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-oxm/4.2.5.RELEASE/spring-oxm-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-context-support/4.2.5.RELEASE/spring-context-support-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.jar, file:/E:/repos/maven/redis/clients/jedis/2.7.3/jedis-2.7.3.jar, file:/E:/repos/maven/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-thymeleaf/1.3.3.RELEASE/spring-boot-starter-thymeleaf-1.3.3.RELEASE.jar, file:/E:/repos/maven/nz/net/ultraq/thymeleaf/thymeleaf-layout-dialect/1.3.3/thymeleaf-layout-dialect-1.3.3.jar, file:/E:/repos/maven/org/codehaus/groovy/groovy/2.4.6/groovy-2.4.6.jar, file:/E:/repos/maven/org/thymeleaf/thymeleaf/2.1.4.RELEASE/thymeleaf-2.1.4.RELEASE.jar, file:/E:/repos/maven/ognl/ognl/3.0.8/ognl-3.0.8.jar, file:/E:/repos/maven/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar, file:/E:/repos/maven/org/unbescape/unbescape/1.1.0.RELEASE/unbescape-1.1.0.RELEASE.jar, file:/E:/repos/maven/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar, file:/E:/repos/maven/org/thymeleaf/thymeleaf-spring4/2.1.4.RELEASE/thymeleaf-spring4-2.1.4.RELEASE.jar, file:/E:/repos/maven/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar, file:/E:/repos/maven/org/springframework/boot/spring-boot-starter-test/1.3.3.RELEASE/spring-boot-starter-test-1.3.3.RELEASE.jar, file:/E:/repos/maven/junit/junit/4.12/junit-4.12.jar, file:/E:/repos/maven/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar, file:/E:/repos/maven/org/objenesis/objenesis/2.1/objenesis-2.1.jar, file:/E:/repos/maven/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar, file:/E:/repos/maven/org/hamcrest/hamcrest-library/1.3/hamcrest-library-1.3.jar, file:/E:/repos/maven/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE.jar, file:/E:/repos/maven/org/springframework/spring-test/4.2.5.RELEASE/spring-test-4.2.5.RELEASE.jar, file:/E:/repos/maven/commons-io/commons-io/2.4/commons-io-2.4.jar, file:/E:/repos/maven/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar, file:/E:/repos/maven/org/eclipse/persistence/eclipselink/2.6.2/eclipselink-2.6.2.jar, file:/E:/repos/maven/org/eclipse/persistence/javax.persistence/2.1.1/javax.persistence-2.1.1.jar, file:/E:/repos/maven/org/eclipse/persistence/commonj.sdo/2.1.1/commonj.sdo-2.1.1.jar, file:/E:/repos/maven/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar, file:/E:/repos/maven/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar, file:/E:/local/eclipse/configuration/org.eclipse.osgi/392/0/.cp/, file:/E:/local/eclipse/configuration/org.eclipse.osgi/391/0/.cp/]
+2017-07-12 23:20:28.199 [main] ERROR o.springframework.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6f4f5643] to prepare test instance [wx.AppTest@29507fc9]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat servlet container
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:165)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:293)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:141)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:118)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Tomcat connector in failed state
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:159)
+	... 35 common frames omitted
+2017-07-12 23:20:45.286 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.AppTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 23:20:45.315 [main] INFO  o.s.test.context.web.WebTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.boot.test.IntegrationTestPropertiesListener@7b25cf56, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6f4f5643, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@41a881cc, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1de199c1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@46355d3a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@597baed8]
+2017-07-12 23:20:45.991 [main] INFO  wx.AppTest - Starting AppTest on hqh-PC with PID 4264 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:20:45.992 [main] DEBUG wx.AppTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:20:45.992 [main] INFO  wx.AppTest - No active profile set, falling back to default profiles: default
+2017-07-12 23:20:46.443 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc5dc73: startup date [Wed Jul 12 23:20:46 CST 2017]; root of context hierarchy
+2017-07-12 23:20:46.457 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:20:47.661 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 23:20:48.801 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 23:20:48.819 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 23:20:48.821 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 23:20:48.960 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 23:20:48.960 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2517 ms
+2017-07-12 23:20:49.471 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 23:20:49.472 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 23:20:49.472 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 23:20:49.472 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 23:20:49.472 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 23:20:49.472 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 23:20:49.607 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:20:50.094 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc5dc73: startup date [Wed Jul 12 23:20:46 CST 2017]; root of context hierarchy
+2017-07-12 23:20:50.232 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:20:50.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 23:20:50.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 23:20:50.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 23:20:50.236 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 23:20:50.243 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:20:50.244 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 23:20:50.310 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:20:50.311 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:20:50.387 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 23:20:50.442 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:20:51.509 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:51.625 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 23:20:51.648 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 23:20:51.677 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 23:20:51.686 [main] INFO  wx.AppTest - Started AppTest in 6.155 seconds (JVM running for 7.513)
+2017-07-12 23:20:55.012 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"onpHk5x5CzUEsmXo-N4ppLPBlTTnzST9PH-_GiZmbVVcATZOxBlJfDLqbGph2c7CbKdTXuC_dghWFudUK-aQ1jkdybpcebgMU11sYFj5xpXNnf8_v0DGBCrVVA47bGqMPYMfAHAGPD","expires_in":7200}
+2017-07-12 23:20:55.048 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=onpHk5x5CzUEsmXo-N4ppLPBlTTnzST9PH-_GiZmbVVcATZOxBlJfDLqbGph2c7CbKdTXuC_dghWFudUK-aQ1jkdybpcebgMU11sYFj5xpXNnf8_v0DGBCrVVA47bGqMPYMfAHAGPD
+2017-07-12 23:20:55.081 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-12 23:20:55.202 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 23:20:55.202 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 23:20:55.229 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2017-07-12 23:20:55.250 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1499872851]
+2017-07-12 23:20:55.250 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[45ff5197-7de3-4123-9a5a-6ea8c66d3466]
+2017-07-12 23:20:55.391 [main] INFO  wx.AppTest - error
+2017-07-12 23:20:55.394 [Thread-4] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bc5dc73: startup date [Wed Jul 12 23:20:46 CST 2017]; root of context hierarchy
+2017-07-12 23:21:33.064 [main] INFO  com.asynclife.wx.App - Starting App on hqh-PC with PID 4316 (E:\source\practice-java\weixin\target\classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:21:33.069 [main] DEBUG com.asynclife.wx.App - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:21:33.069 [main] INFO  com.asynclife.wx.App - No active profile set, falling back to default profiles: default
+2017-07-12 23:21:33.512 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@429eb61a: startup date [Wed Jul 12 23:21:33 CST 2017]; root of context hierarchy
+2017-07-12 23:21:33.516 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:21:34.767 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 23:21:35.995 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 23:21:36.013 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 23:21:36.015 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 23:21:36.156 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 23:21:36.156 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2644 ms
+2017-07-12 23:21:36.705 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 23:21:36.705 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 23:21:36.706 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 23:21:36.706 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 23:21:36.706 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 23:21:36.706 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 23:21:36.842 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:21:37.316 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@429eb61a: startup date [Wed Jul 12 23:21:33 CST 2017]; root of context hierarchy
+2017-07-12 23:21:37.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:21:37.452 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 23:21:37.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 23:21:37.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 23:21:37.456 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 23:21:37.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:21:37.465 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 23:21:37.530 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:21:37.530 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:21:37.603 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 23:21:37.656 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:21:38.733 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-07-12 23:21:38.817 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:21:38.829 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 23:21:38.854 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 23:21:38.886 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 23:21:38.897 [main] INFO  com.asynclife.wx.App - Started App in 6.276 seconds (JVM running for 7.062)
+2017-07-12 23:32:16.055 [main] INFO  com.asynclife.wx.App - Starting App on hqh-PC with PID 6272 (E:\source\practice-java\weixin\target\classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:32:16.061 [main] DEBUG com.asynclife.wx.App - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:32:16.061 [main] INFO  com.asynclife.wx.App - No active profile set, falling back to default profiles: default
+2017-07-12 23:32:16.533 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@520c87f3: startup date [Wed Jul 12 23:32:16 CST 2017]; root of context hierarchy
+2017-07-12 23:32:16.544 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:32:17.768 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 23:32:18.871 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 23:32:18.887 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 23:32:18.889 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 23:32:19.036 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 23:32:19.037 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2504 ms
+2017-07-12 23:32:19.539 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 23:32:19.539 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 23:32:19.539 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 23:32:19.539 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 23:32:19.540 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 23:32:19.540 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 23:32:19.665 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:32:20.112 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@520c87f3: startup date [Wed Jul 12 23:32:16 CST 2017]; root of context hierarchy
+2017-07-12 23:32:20.227 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:32:20.229 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 23:32:20.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 23:32:20.233 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 23:32:20.234 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 23:32:20.242 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:32:20.243 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 23:32:20.315 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:32:20.315 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:32:20.372 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 23:32:20.428 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:32:21.495 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-07-12 23:32:21.570 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:32:21.582 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 23:32:21.611 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 23:32:21.640 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 23:32:21.650 [main] INFO  com.asynclife.wx.App - Started App in 6.055 seconds (JVM running for 6.715)
+2017-07-12 23:32:58.676 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 23:32:58.697 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-12 23:32:58.731 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@523b58f2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@364ca20b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@61229c06, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27317fbc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@22b923be, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28d9a0c1]
+2017-07-12 23:32:59.315 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 5700 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:32:59.315 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:32:59.315 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2017-07-12 23:32:59.765 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:32:59.799 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5aee58a1: startup date [Wed Jul 12 23:32:59 CST 2017]; root of context hierarchy
+2017-07-12 23:33:01.392 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:33:02.652 [main] INFO  wx.MenuTest - Started MenuTest in 3.764 seconds (JVM running for 4.7)
+2017-07-12 23:33:02.721 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"品质生活",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"健康饮水",
+	               "url":"http://www.originwater.com/"
+	            },
+	            {
+	               "type":"view",
+	               "name":"智能家居",
+	               "url":"http://www.luolai.com.cn/"
+	            },
+	            {
+	               "type":"view",
+	               "name":"自由呼吸",
+	               "url":"http://mall.aosmith.com.cn/"
+	            },
+	            {
+	               "type":"view",
+	               "name":"互联网TV",
+	               "url":"http://www.lemall.com/tv.html"
+	            }]
+	       },
+	       {
+	           "name":"加入我们",
+	           "sub_button":[
+	           {
+	               "type":"click",
+	               "name":"合作咨询",
+	               "key":"M2001_COOPERATION"
+	            }]
+	       },
+	       {
+	           "name":"微信分享",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我的首页",
+	               "url":"http://clonegod.ngrok.cc/wx/index"
+	            },
+	            {
+	               "type":"click",
+	               "name":"联系客服",
+	               "key":"M3001_CUSTOMER_SERVICE"
+	            }]
+	       }
+       ]
+ }
+
+2017-07-12 23:33:03.594 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"Jx2gdMNNb61TFB1Q1Vrey4g57q15twlo4kw3nSl5ww3eG45iHSJtGcoX-2PWq7pvlYFHInewnt21vhM21bFEleBZ3oAAcDWszszWLPBUiR_QTcngMwneFVwm1Kg9rFG5QQJfACATTM","expires_in":7200}
+2017-07-12 23:33:03.605 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=Jx2gdMNNb61TFB1Q1Vrey4g57q15twlo4kw3nSl5ww3eG45iHSJtGcoX-2PWq7pvlYFHInewnt21vhM21bFEleBZ3oAAcDWszszWLPBUiR_QTcngMwneFVwm1Kg9rFG5QQJfACATTM
+2017-07-12 23:33:03.608 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-12 23:33:04.244 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":0,"errmsg":"ok"}
+2017-07-12 23:33:04.275 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5aee58a1: startup date [Wed Jul 12 23:32:59 CST 2017]; root of context hierarchy
+2017-07-12 23:39:08.776 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 23:39:08.794 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-12 23:39:08.835 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@403e2dba, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@322c2f49, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@72d47b5a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5bee8c9b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@a514344, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5d172aa6]
+2017-07-12 23:39:09.434 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 4908 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:39:09.434 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:39:09.434 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2017-07-12 23:39:09.885 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:39:09.912 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@30dcce73: startup date [Wed Jul 12 23:39:09 CST 2017]; root of context hierarchy
+2017-07-12 23:39:11.359 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:39:12.818 [main] INFO  wx.MenuTest - Started MenuTest in 3.803 seconds (JVM running for 4.825)
+2017-07-12 23:39:12.847 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"品质生活",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"健康饮水",
+	               "url":"http://www.originwater.com/"
+	            },
+	            {
+	               "type":"view",
+	               "name":"智能家居",
+	               "url":"http://www.luolai.com.cn/"
+	            },
+	            {
+	               "type":"view",
+	               "name":"自由呼吸",
+	               "url":"http://mall.aosmith.com.cn/"
+	            },
+	            {
+	               "type":"view",
+	               "name":"互联网TV",
+	               "url":"http://www.lemall.com/tv.html"
+	            }]
+	       },
+	       {
+	           "name":"加入我们",
+	           "sub_button":[
+	           {
+	               "type":"click",
+	               "name":"合作咨询",
+	               "key":"M2001_COOPERATION"
+	            }]
+	       },
+	       {
+	           "name":"微信分享",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我的首页",
+	               "url":"http://clonegod.ngrok.cc/wx/index"
+	            },
+	            {
+	               "type":"click",
+	               "name":"联系客服",
+	               "key":"M3001_CUSTOMER_SERVICE"
+	            }]
+	       }
+       ]
+ }
+
+2017-07-12 23:39:13.769 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"uMlZeWk8hUb8vaaWo_7MMnvvHbHI_OzdHY4OLSmBGAldxBptPsBdvgVuuIG8tfBMB_cn_T_avZGka1nPlr149YlyX2NiameuJV-H16_CmY9peV71f1NanOQk3HRY2QrTJTNhAGAXHB","expires_in":7200}
+2017-07-12 23:39:13.779 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=uMlZeWk8hUb8vaaWo_7MMnvvHbHI_OzdHY4OLSmBGAldxBptPsBdvgVuuIG8tfBMB_cn_T_avZGka1nPlr149YlyX2NiameuJV-H16_CmY9peV71f1NanOQk3HRY2QrTJTNhAGAXHB
+2017-07-12 23:39:13.782 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-12 23:39:14.404 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":0,"errmsg":"ok"}
+2017-07-12 23:39:14.411 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@30dcce73: startup date [Wed Jul 12 23:39:09 CST 2017]; root of context hierarchy
+2017-07-12 23:46:06.297 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-12 23:46:06.322 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-12 23:46:06.365 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@31a0eaf1, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3ba08dab, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@29b4f422, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2707f992, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7c91f442, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@523b58f2]
+2017-07-12 23:46:06.952 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 412 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:46:06.952 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:46:06.952 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2017-07-12 23:46:07.417 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@608d5908: startup date [Wed Jul 12 23:46:07 CST 2017]; root of context hierarchy
+2017-07-12 23:46:07.426 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:46:08.935 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:46:10.427 [main] INFO  wx.MenuTest - Started MenuTest in 3.876 seconds (JVM running for 5.0)
+2017-07-12 23:46:10.456 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str={
+     "button":[
+     {	
+          "type":"click",
+          "name":"今日房源",
+          "key":"V1001_TODAY_HOUSE"
+      },
+      {
+           "name":"关于我们",
+           "sub_button":[
+           {	
+               "type":"view",
+               "name":"搜索",
+               "url":"http://www.baidu.com/"
+            },
+            {
+               "type":"click",
+               "name":"赞一下我们",
+               "key":"V1001_GOOD"
+            }]
+       }]
+ }
+
+2017-07-12 23:46:11.301 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"Ip6nB0PGr4y_Kk1b6fb98Z4AdY7iwwtS_ctWAaxDc5hpjIG6nvuBV2QWye7rTyxfKVyU26BPQcCNjZ4bz8VTq-Pi0_bwBdUNflwpd4s1twg-nFtwWwF11sS2JS45NJJ9UGWcAFAXJZ","expires_in":7200}
+2017-07-12 23:46:11.311 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=Ip6nB0PGr4y_Kk1b6fb98Z4AdY7iwwtS_ctWAaxDc5hpjIG6nvuBV2QWye7rTyxfKVyU26BPQcCNjZ4bz8VTq-Pi0_bwBdUNflwpd4s1twg-nFtwWwF11sS2JS45NJJ9UGWcAFAXJZ
+2017-07-12 23:46:11.314 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-12 23:46:11.893 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":0,"errmsg":"ok"}
+2017-07-12 23:46:11.910 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@608d5908: startup date [Wed Jul 12 23:46:07 CST 2017]; root of context hierarchy
+2017-07-12 23:47:38.764 [main] INFO  com.asynclife.wx.App - Starting App on hqh-PC with PID 4628 (E:\source\practice-java\weixin\target\classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-12 23:47:38.767 [main] DEBUG com.asynclife.wx.App - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-12 23:47:38.768 [main] INFO  com.asynclife.wx.App - No active profile set, falling back to default profiles: default
+2017-07-12 23:47:39.215 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-12 23:47:39.229 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54b83d10: startup date [Wed Jul 12 23:47:39 CST 2017]; root of context hierarchy
+2017-07-12 23:47:40.426 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2017-07-12 23:47:41.494 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2017-07-12 23:47:41.512 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2017-07-12 23:47:41.514 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2017-07-12 23:47:41.677 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2017-07-12 23:47:41.678 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2449 ms
+2017-07-12 23:47:42.234 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-07-12 23:47:42.234 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-07-12 23:47:42.235 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-07-12 23:47:42.235 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2017-07-12 23:47:42.235 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2017-07-12 23:47:42.235 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2017-07-12 23:47:42.393 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-12 23:47:42.843 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54b83d10: startup date [Wed Jul 12 23:47:39 CST 2017]; root of context hierarchy
+2017-07-12 23:47:42.963 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:47:42.965 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2017-07-12 23:47:42.968 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2017-07-12 23:47:42.968 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2017-07-12 23:47:42.968 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2017-07-12 23:47:42.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-07-12 23:47:42.977 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-07-12 23:47:43.046 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:47:43.047 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:47:43.112 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2017-07-12 23:47:43.163 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-07-12 23:47:44.149 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2017-07-12 23:47:44.214 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2017-07-12 23:47:44.225 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2017-07-12 23:47:44.247 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2017-07-12 23:47:44.279 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2017-07-12 23:47:44.288 [main] INFO  com.asynclife.wx.App - Started App in 5.976 seconds (JVM running for 6.627)
+2017-07-12 23:47:46.623 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-07-12 23:47:46.623 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2017-07-12 23:47:46.640 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+2017-07-12 23:47:46.657 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=signature, vlaue=[f6e0b4d1528cdc9375af7251a1f2934a70ba421e]
+2017-07-12 23:47:46.658 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1499874460]
+2017-07-12 23:47:46.658 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[854274225]
+2017-07-12 23:47:46.658 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=openid, vlaue=[ob286xMa2Zbx80hF_ph6Y3w5G1BE]
+2017-07-12 23:47:46.686 [http-nio-80-exec-1] DEBUG com.asynclife.wx.controller.FrontController - <xml><ToUserName><![CDATA[gh_5f2004dcc2a2]]></ToUserName>
+<FromUserName><![CDATA[ob286xMa2Zbx80hF_ph6Y3w5G1BE]]></FromUserName>
+<CreateTime>1499874460</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[V1001_GOOD]]></EventKey>
+</xml>
+
+2017-07-12 23:47:47.142 [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2017-07-12 23:47:47.197 [http-nio-80-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2017-07-12 23:47:47.197 [http-nio-80-exec-1] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2017-07-12 23:47:47.197 [http-nio-80-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2017-07-12 23:47:47.198 [http-nio-80-exec-1] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2017-07-12 23:47:47.203 [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2017-07-12 23:47:47.203 [http-nio-80-exec-1] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2017-07-12 23:48:03.757 [http-nio-80-exec-3] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=signature, vlaue=[ef91cac7b5bc1bad8bdd4d8521b188f0fd9f02bc]
+2017-07-12 23:48:03.758 [http-nio-80-exec-3] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1499874477]
+2017-07-12 23:48:03.759 [http-nio-80-exec-3] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[460918110]
+2017-07-12 23:48:03.759 [http-nio-80-exec-3] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=openid, vlaue=[ob286xMa2Zbx80hF_ph6Y3w5G1BE]
+2017-07-12 23:48:03.762 [http-nio-80-exec-3] DEBUG com.asynclife.wx.controller.FrontController - <xml><ToUserName><![CDATA[gh_5f2004dcc2a2]]></ToUserName>
+<FromUserName><![CDATA[ob286xMa2Zbx80hF_ph6Y3w5G1BE]]></FromUserName>
+<CreateTime>1499874477</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[CLICK]]></Event>
+<EventKey><![CDATA[V1001_TODAY_HOUSE]]></EventKey>
+</xml>
+
+2017-07-13 00:38:20.099 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-13 00:38:20.243 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-13 00:38:20.273 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6e6be2c6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6cf56dcc, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@64fba3f6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@44c99f45, org.springframework.test.context.transaction.TransactionalTestExecutionListener@10f78e4b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6c9ee6a0]
+2017-07-13 00:38:20.936 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 4048 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-13 00:38:20.937 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-13 00:38:20.937 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2017-07-13 00:38:21.409 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-13 00:38:21.414 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@646bfe00: startup date [Thu Jul 13 00:38:21 CST 2017]; root of context hierarchy
+2017-07-13 00:38:22.911 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-13 00:38:24.336 [main] INFO  wx.MenuTest - Started MenuTest in 3.863 seconds (JVM running for 5.032)
+2017-07-13 00:38:24.365 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str={
+     "button":[
+     {	
+          "type":"click",
+          "name":"今日房源",
+          "key":"V1001_TODAY_HOUSE"
+      },
+      {
+           "name":"关于我们",
+           "sub_button":[
+           {
+               "type":"click",
+               "name":"业务介绍",
+               "key":"V1001_GOOD"
+           },
+           {	
+               "type":"view",
+               "name":"商务合作",
+               "url":"http://www.baidu.com/"
+            }]
+       }]
+ }
+
+2017-07-13 00:38:25.256 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"FcI9Dy0S-gOV2_4tptVE8hH2nhLnWFdD14yRWWhmPPHBWVNNicMDPGPs-0paW9vZR-qfkSlHqaWGucMsspLNfqQz-3DpFTFRBLATKzJ2kXguag-Td02sX8UO-_0_X8fvQNCcADAGDS","expires_in":7200}
+2017-07-13 00:38:25.269 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=FcI9Dy0S-gOV2_4tptVE8hH2nhLnWFdD14yRWWhmPPHBWVNNicMDPGPs-0paW9vZR-qfkSlHqaWGucMsspLNfqQz-3DpFTFRBLATKzJ2kXguag-Td02sX8UO-_0_X8fvQNCcADAGDS
+2017-07-13 00:38:25.272 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-13 00:38:25.874 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":0,"errmsg":"ok"}
+2017-07-13 00:38:25.877 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@646bfe00: startup date [Thu Jul 13 00:38:21 CST 2017]; root of context hierarchy
+2017-07-13 00:40:46.427 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-07-13 00:40:46.447 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2017-07-13 00:40:46.489 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@523b58f2, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@364ca20b, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@61229c06, org.springframework.test.context.support.DirtiesContextTestExecutionListener@27317fbc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@22b923be, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@28d9a0c1]
+2017-07-13 00:40:47.099 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 3332 (E:\source\practice-java\weixin\target\test-classes started by Administrator in E:\source\practice-java\weixin)
+2017-07-13 00:40:47.100 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2017-07-13 00:40:47.100 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2017-07-13 00:40:47.573 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@65ce90f5: startup date [Thu Jul 13 00:40:47 CST 2017]; root of context hierarchy
+2017-07-13 00:40:47.578 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2017-07-13 00:40:49.079 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2017-07-13 00:40:50.509 [main] INFO  wx.MenuTest - Started MenuTest in 3.838 seconds (JVM running for 4.815)
+2017-07-13 00:40:50.537 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str={
+     "button":[
+     {	
+          "type":"click",
+          "name":"今日房源",
+          "key":"V1001_TODAY_HOUSE"
+      },
+      {
+           "name":"关于我们",
+           "sub_button":[
+           {
+               "type":"click",
+               "name":"业务介绍",
+               "key":"V2001_BIZ_INTRO"
+           },
+           {	
+               "type":"view",
+               "name":"商务合作",
+               "url":"http://www.baidu.com/"
+            }]
+       }]
+ }
+
+2017-07-13 00:40:52.336 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"5tL-pPM1dZiRRJnQsWwcweDvMOyNQj2-_SqHXKQYifKhyEeCjSf6AUVHX2TOr1P1OdB7wInvaAD3AhWe6vPEcv-YGUTQbRaWe8og9byNp0Z8Yt2kMQbqme839Angy7wzCFNfACAVYG","expires_in":7200}
+2017-07-13 00:40:52.355 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=5tL-pPM1dZiRRJnQsWwcweDvMOyNQj2-_SqHXKQYifKhyEeCjSf6AUVHX2TOr1P1OdB7wInvaAD3AhWe6vPEcv-YGUTQbRaWe8og9byNp0Z8Yt2kMQbqme839Angy7wzCFNfACAVYG
+2017-07-13 00:40:52.357 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2017-07-13 00:40:53.109 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":0,"errmsg":"ok"}
+2017-07-13 00:40:53.115 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@65ce90f5: startup date [Thu Jul 13 00:40:47 CST 2017]; root of context hierarchy

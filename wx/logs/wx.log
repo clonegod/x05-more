@@ -1,0 +1,756 @@
+2016-05-18 22:36:41.161 [main] INFO  com.asynclife.wx.App - Starting App on hqh-PC with PID 4308 (E:\tmp\app-samples\wx\target\classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 22:36:41.208 [main] DEBUG com.asynclife.wx.App - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 22:36:41.208 [main] INFO  com.asynclife.wx.App - No active profile set, falling back to default profiles: default
+2016-05-18 22:36:44.546 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c6e276e: startup date [Wed May 18 22:36:44 CST 2016]; root of context hierarchy
+2016-05-18 22:36:44.906 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 22:36:47.404 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-05-18 22:36:49.778 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2016-05-18 22:36:49.857 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2016-05-18 22:36:49.857 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-05-18 22:36:50.122 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2016-05-18 22:36:50.122 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5576 ms
+2016-05-18 22:36:50.731 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-05-18 22:36:50.746 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-05-18 22:36:50.746 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-05-18 22:36:50.746 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2016-05-18 22:36:50.746 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2016-05-18 22:36:50.746 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2016-05-18 22:36:50.980 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 22:36:54.866 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c6e276e: startup date [Wed May 18 22:36:44 CST 2016]; root of context hierarchy
+2016-05-18 22:36:54.995 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2016-05-18 22:36:55.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2016-05-18 22:36:55.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2016-05-18 22:36:55.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2016-05-18 22:36:55.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2016-05-18 22:36:55.010 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-05-18 22:36:55.026 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-05-18 22:36:55.057 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 22:36:55.057 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 22:36:55.104 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2016-05-18 22:36:55.166 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 22:36:56.389 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2016-05-18 22:36:56.516 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2016-05-18 22:36:56.563 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2016-05-18 22:36:56.687 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2016-05-18 22:36:56.734 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2016-05-18 22:36:56.765 [main] INFO  com.asynclife.wx.App - Started App in 17.644 seconds (JVM running for 22.483)
+2016-05-18 22:49:20.137 [main] INFO  com.asynclife.wx.App - Starting App on hqh-PC with PID 3496 (E:\tmp\app-samples\wx\target\classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 22:49:20.137 [main] DEBUG com.asynclife.wx.App - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 22:49:20.137 [main] INFO  com.asynclife.wx.App - No active profile set, falling back to default profiles: default
+2016-05-18 22:49:20.652 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 22:49:20.730 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1224144a: startup date [Wed May 18 22:49:20 CST 2016]; root of context hierarchy
+2016-05-18 22:49:22.337 [main] INFO  o.s.b.factory.support.DefaultListableBeanFactory - Overriding bean definition for bean 'beanNameViewResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2016-05-18 22:49:23.900 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 80 (http)
+2016-05-18 22:49:23.964 [main] INFO  org.apache.catalina.core.StandardService - Starting service Tomcat
+2016-05-18 22:49:23.980 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.0.32
+2016-05-18 22:49:24.198 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2016-05-18 22:49:24.198 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3468 ms
+2016-05-18 22:49:24.827 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-05-18 22:49:24.827 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-05-18 22:49:24.827 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-05-18 22:49:24.827 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2016-05-18 22:49:24.827 [localhost-startStop-1] INFO  o.s.boot.context.embedded.FilterRegistrationBean - Mapping filter: 'requestParmasRegistrationBean' to urls: [/*]
+2016-05-18 22:49:24.827 [localhost-startStop-1] INFO  o.s.boot.context.embedded.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2016-05-18 22:49:25.014 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 22:49:25.680 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1224144a: startup date [Wed May 18 22:49:20 CST 2016]; root of context hierarchy
+2016-05-18 22:49:25.821 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[POST]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.handleMessage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2016-05-18 22:49:25.821 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.asynclife.wx.controller.FrontController.checkSign(javax.servlet.http.HttpServletRequest)
+2016-05-18 22:49:25.836 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/index]}" onto public java.lang.String com.asynclife.wx.controller.WxJsController.index(org.springframework.ui.Model)
+2016-05-18 22:49:25.836 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/sign],produces=[application/json]}" onto public java.lang.Object com.asynclife.wx.controller.WxJsController.createSign(java.lang.String)
+2016-05-18 22:49:25.836 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/wx/share]}" onto public org.springframework.web.servlet.ModelAndView com.asynclife.wx.controller.WxJsController.share(java.lang.String,org.springframework.web.servlet.ModelAndView)
+2016-05-18 22:49:25.836 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-05-18 22:49:25.836 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-05-18 22:49:25.899 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 22:49:25.899 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 22:49:25.945 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalErrorControllerAdvice
+2016-05-18 22:49:25.992 [main] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-05-18 22:49:27.256 [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2016-05-18 22:49:27.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+2016-05-18 22:49:27.334 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+2016-05-18 22:49:27.350 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2016-05-18 22:49:27.397 [main] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 80 (http)
+2016-05-18 22:49:27.397 [main] INFO  com.asynclife.wx.App - Started App in 7.697 seconds (JVM running for 9.122)
+2016-05-18 22:51:14.762 [http-nio-80-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2016-05-18 22:51:14.762 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2016-05-18 22:51:14.823 [http-nio-80-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 61 ms
+2016-05-18 22:51:14.857 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=signature, vlaue=[09976262a07461c5b509a0636acc412092df3d0e]
+2016-05-18 22:51:14.857 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=echostr, vlaue=[1047685242971545967]
+2016-05-18 22:51:14.857 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1463583073]
+2016-05-18 22:51:14.857 [http-nio-80-exec-1] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[837971446]
+2016-05-18 22:51:14.904 [http-nio-80-exec-1] DEBUG com.asynclife.wx.service.SignatureCheckService - signature is valid!
+2016-05-18 23:13:12.018 [http-nio-80-exec-3] ERROR com.asynclife.wx.filter.SecurityFilter - No sinature in request, parameter map is empty!
+2016-05-18 23:13:12.054 [http-nio-80-exec-3] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2016-05-18 23:13:12.151 [http-nio-80-exec-3] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2016-05-18 23:13:12.151 [http-nio-80-exec-3] INFO  o.t.templateresolver.AbstractTemplateResolver - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2016-05-18 23:13:12.152 [http-nio-80-exec-3] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2016-05-18 23:13:12.152 [http-nio-80-exec-3] INFO  o.t.messageresolver.AbstractMessageResolver - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2016-05-18 23:13:12.165 [http-nio-80-exec-3] INFO  org.thymeleaf.TemplateEngine.CONFIG - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XHTML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2016-05-18 23:13:12.165 [http-nio-80-exec-3] INFO  org.thymeleaf.TemplateEngine - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2016-05-18 23:13:12.917 [http-nio-80-exec-4] ERROR com.asynclife.wx.filter.SecurityFilter - No sinature in request, parameter map is empty!
+2016-05-18 23:13:34.933 [http-nio-80-exec-6] ERROR com.asynclife.wx.filter.SecurityFilter - No sinature in request, parameter map is empty!
+2016-05-18 23:13:50.694 [http-nio-80-exec-10] ERROR com.asynclife.wx.filter.SecurityFilter - No sinature in request, parameter map is empty!
+2016-05-18 23:13:53.057 [http-nio-80-exec-10] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"EHWcLbvleQhnO1W5OFyIbpbzngb29u3QnzVFUXjFEG64sGhgJqAPV4I2KE-E5HaMQY6AhMECMHDxdWJizuM00S6xOrDc881j7tAtAXGaotEfxio_2fbnqUv0FhbkL91kTUIeAHAHIW","expires_in":7200}
+2016-05-18 23:13:53.094 [http-nio-80-exec-10] INFO  com.asynclife.wx.service.AccessTokenService - access token=EHWcLbvleQhnO1W5OFyIbpbzngb29u3QnzVFUXjFEG64sGhgJqAPV4I2KE-E5HaMQY6AhMECMHDxdWJizuM00S6xOrDc881j7tAtAXGaotEfxio_2fbnqUv0FhbkL91kTUIeAHAHIW
+2016-05-18 23:13:53.110 [http-nio-80-exec-10] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2016-05-18 23:13:53.439 [http-nio-80-exec-10] INFO  com.asynclife.wx.service.JSAPITicketService - wx server return:{"errcode":0,"errmsg":"ok","ticket":"kgt8ON7yVITDhtdwci0qeZc11mFg4NhN-XmQZd8FaHkj9Qvv8-4WsQRcVPzRWf2IbzKedjjXwcGUWB6Nul_sVA","expires_in":7200}
+2016-05-18 23:13:53.442 [http-nio-80-exec-10] INFO  com.asynclife.wx.service.JSAPITicketService - js api ticket=kgt8ON7yVITDhtdwci0qeZc11mFg4NhN-XmQZd8FaHkj9Qvv8-4WsQRcVPzRWf2IbzKedjjXwcGUWB6Nul_sVA
+2016-05-18 23:13:53.443 [http-nio-80-exec-10] INFO  com.asynclife.wx.service.JSAPITicketService - refresh js api ticket success
+2016-05-18 23:13:53.594 [http-nio-80-exec-1] ERROR com.asynclife.wx.filter.SecurityFilter - No sinature in request, parameter map is empty!
+2016-05-18 23:13:53.806 [http-nio-80-exec-2] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=url, vlaue=[http://localhost/wx/index]
+2016-05-18 23:13:53.811 [http-nio-80-exec-2] INFO  com.asynclife.wx.service.JSAPITicketService - use cached js api ticket
+2016-05-18 23:13:53.813 [http-nio-80-exec-2] INFO  com.asynclife.wx.model.WxConfig - string1=jsapi_ticket=kgt8ON7yVITDhtdwci0qeZc11mFg4NhN-XmQZd8FaHkj9Qvv8-4WsQRcVPzRWf2IbzKedjjXwcGUWB6Nul_sVA&noncestr=6399e827b8ba43768261778bf29cf9a4&timestamp=1463584433&url=http://localhost/wx/index
+2016-05-18 23:13:53.813 [http-nio-80-exec-2] INFO  com.asynclife.wx.model.WxConfig - WxConfig [appId=wx5845a2e6c585c2d6, noncestr=6399e827b8ba43768261778bf29cf9a4, jsapi_ticket=kgt8ON7yVITDhtdwci0qeZc11mFg4NhN-XmQZd8FaHkj9Qvv8-4WsQRcVPzRWf2IbzKedjjXwcGUWB6Nul_sVA, timestamp=1463584433, url=http://localhost/wx/index, signature=ca9aa50b76fd92ff1a9423bc2038d597d2677ecc]
+2016-05-18 23:33:45.134 [http-nio-80-exec-5] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=signature, vlaue=[02c14610bb06daa96367c6786fa5f9b35650250e]
+2016-05-18 23:33:45.134 [http-nio-80-exec-5] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1463585624]
+2016-05-18 23:33:45.135 [http-nio-80-exec-5] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[842170087]
+2016-05-18 23:33:45.177 [http-nio-80-exec-5] DEBUG com.asynclife.wx.controller.FrontController - <xml><ToUserName><![CDATA[gh_1d24a22edc18]]></ToUserName>
+<FromUserName><![CDATA[oOnXOwjb_QYPTaAFpzo_m-U70VCY]]></FromUserName>
+<CreateTime>1463585624</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-05-18 23:33:45.590 [http-nio-80-exec-5] DEBUG com.asynclife.wx.service.EventService - Event-SUBSCRIBE, user=oOnXOwjb_QYPTaAFpzo_m-U70VCY
+2016-05-18 23:34:39.395 [http-nio-80-exec-6] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=signature, vlaue=[efc0ffb1c07b116801004cd7c3e0a5cbcaa00192]
+2016-05-18 23:34:39.396 [http-nio-80-exec-6] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1463585679]
+2016-05-18 23:34:39.396 [http-nio-80-exec-6] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[846388164]
+2016-05-18 23:34:39.399 [http-nio-80-exec-6] DEBUG com.asynclife.wx.controller.FrontController - <xml><ToUserName><![CDATA[gh_1d24a22edc18]]></ToUserName>
+<FromUserName><![CDATA[oOnXOwjb_QYPTaAFpzo_m-U70VCY]]></FromUserName>
+<CreateTime>1463585679</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[unsubscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-05-18 23:34:39.419 [http-nio-80-exec-6] DEBUG com.asynclife.wx.service.EventService - Event-UNSUBSCRIBE, user=oOnXOwjb_QYPTaAFpzo_m-U70VCY
+2016-05-18 23:34:51.192 [http-nio-80-exec-8] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=signature, vlaue=[e1449c0e50d8000211b8c6cb2c3c0218d0b30dd2]
+2016-05-18 23:34:51.193 [http-nio-80-exec-8] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=timestamp, vlaue=[1463585691]
+2016-05-18 23:34:51.194 [http-nio-80-exec-8] DEBUG com.asynclife.wx.filter.SecurityFilter - req paramter: key=nonce, vlaue=[681086458]
+2016-05-18 23:34:51.196 [http-nio-80-exec-8] DEBUG com.asynclife.wx.controller.FrontController - <xml><ToUserName><![CDATA[gh_1d24a22edc18]]></ToUserName>
+<FromUserName><![CDATA[oOnXOwjb_QYPTaAFpzo_m-U70VCY]]></FromUserName>
+<CreateTime>1463585691</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[subscribe]]></Event>
+<EventKey><![CDATA[]]></EventKey>
+</xml>
+
+2016-05-18 23:34:51.231 [http-nio-80-exec-8] DEBUG com.asynclife.wx.service.EventService - Event-SUBSCRIBE, user=oOnXOwjb_QYPTaAFpzo_m-U70VCY
+2016-05-18 23:38:14.142 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:38:14.161 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:38:14.207 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a30d1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5891e32e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8e24743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a10858, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23fe1d71]
+2016-05-18 23:38:14.786 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 4816 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:38:14.787 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:38:14.788 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:38:15.173 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:38:15.278 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:38:15 CST 2016]; root of context hierarchy
+2016-05-18 23:38:16.652 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:38:17.986 [main] INFO  wx.MenuTest - Started MenuTest in 3.64 seconds (JVM running for 5.151)
+2016-05-18 23:38:18.037 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:38:19.353 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [BUUHta0899vr21]"}
+2016-05-18 23:38:19.396 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:38:15 CST 2016]; root of context hierarchy
+2016-05-18 23:39:00.912 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:39:00.936 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:39:00.967 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a30d1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5891e32e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8e24743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a10858, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23fe1d71]
+2016-05-18 23:39:01.511 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 6580 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:39:01.511 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:39:01.512 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:39:01.997 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:39:02.035 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:39:02 CST 2016]; root of context hierarchy
+2016-05-18 23:39:03.356 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:39:04.687 [main] INFO  wx.MenuTest - Started MenuTest in 3.583 seconds (JVM running for 4.731)
+2016-05-18 23:39:04.712 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:39:06.001 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [Uxa0945vr22]"}
+2016-05-18 23:39:06.052 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:39:02 CST 2016]; root of context hierarchy
+2016-05-18 23:39:35.213 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:39:35.235 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:39:35.260 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a30d1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5891e32e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8e24743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a10858, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23fe1d71]
+2016-05-18 23:39:35.949 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 7064 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:39:35.950 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:39:35.950 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:39:36.326 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:39:36.467 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@dd8ba08: startup date [Wed May 18 23:39:36 CST 2016]; root of context hierarchy
+2016-05-18 23:39:37.858 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:39:39.306 [main] INFO  wx.MenuTest - Started MenuTest in 3.898 seconds (JVM running for 4.916)
+2016-05-18 23:39:39.333 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:39:40.583 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [LNgJoa0980vr20]"}
+2016-05-18 23:39:40.635 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@dd8ba08: startup date [Wed May 18 23:39:36 CST 2016]; root of context hierarchy
+2016-05-18 23:42:44.683 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:42:44.712 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:42:44.740 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25084a1e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@156b88f5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3bf9ce3e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16610890, org.springframework.test.context.transaction.TransactionalTestExecutionListener@71def8f8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@383bfa16]
+2016-05-18 23:42:45.435 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 6100 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:42:45.436 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:42:45.437 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:42:46.202 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b4711e2: startup date [Wed May 18 23:42:46 CST 2016]; root of context hierarchy
+2016-05-18 23:42:46.309 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:42:49.076 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:42:50.915 [main] INFO  wx.MenuTest - Started MenuTest in 6.014 seconds (JVM running for 7.397)
+2016-05-18 23:42:50.953 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:43:04.797 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [gg02TA0184vr22]"}
+2016-05-18 23:43:04.826 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@b4711e2: startup date [Wed May 18 23:42:46 CST 2016]; root of context hierarchy
+2016-05-18 23:44:24.249 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:44:24.267 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:44:24.291 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a30d1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5891e32e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8e24743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a10858, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23fe1d71]
+2016-05-18 23:44:25.047 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 5844 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:44:25.048 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:44:25.048 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:44:25.267 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:44:25.543 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:44:25 CST 2016]; root of context hierarchy
+2016-05-18 23:44:26.990 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:44:28.435 [main] INFO  wx.MenuTest - Started MenuTest in 3.999 seconds (JVM running for 5.016)
+2016-05-18 23:44:28.464 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:44:29.830 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [03XfZa0269vr23]"}
+2016-05-18 23:44:29.859 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:44:25 CST 2016]; root of context hierarchy
+2016-05-18 23:47:03.225 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:47:03.246 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:47:03.268 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a30d1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5891e32e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8e24743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a10858, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23fe1d71]
+2016-05-18 23:47:03.872 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 4808 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:47:03.873 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:47:03.873 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:47:04.218 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:47:04.354 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:47:04 CST 2016]; root of context hierarchy
+2016-05-18 23:47:05.670 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:47:06.973 [main] INFO  wx.MenuTest - Started MenuTest in 3.57 seconds (JVM running for 4.565)
+2016-05-18 23:47:06.997 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:47:08.012 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":40001,"errmsg":"invalid credential, access_token is invalid or not latest hint: [jvqMMa0427vr18]"}
+2016-05-18 23:47:08.040 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:47:04 CST 2016]; root of context hierarchy
+2016-05-18 23:47:30.476 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:47:30.501 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:47:30.528 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@25084a1e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@156b88f5, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@3bf9ce3e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@16610890, org.springframework.test.context.transaction.TransactionalTestExecutionListener@71def8f8, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@383bfa16]
+2016-05-18 23:47:31.262 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 6984 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:47:31.263 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:47:31.263 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:47:31.718 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:47:31.882 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@b4711e2: startup date [Wed May 18 23:47:31 CST 2016]; root of context hierarchy
+2016-05-18 23:47:33.469 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:47:35.391 [main] INFO  wx.MenuTest - Started MenuTest in 4.685 seconds (JVM running for 6.049)
+2016-05-18 23:47:35.420 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:48:15.732 [main] INFO  o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [wx.MenuTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2016-05-18 23:48:15.755 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2016-05-18 23:48:15.781 [main] INFO  o.s.t.c.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7a30d1e6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5891e32e, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@cb0ed20, org.springframework.test.context.support.DirtiesContextTestExecutionListener@8e24743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@74a10858, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@23fe1d71]
+2016-05-18 23:48:16.404 [main] INFO  wx.MenuTest - Starting MenuTest on hqh-PC with PID 5356 (E:\tmp\app-samples\wx\target\test-classes started by Administrator in E:\tmp\app-samples\wx)
+2016-05-18 23:48:16.404 [main] DEBUG wx.MenuTest - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2016-05-18 23:48:16.405 [main] INFO  wx.MenuTest - No active profile set, falling back to default profiles: default
+2016-05-18 23:48:16.817 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+2016-05-18 23:48:16.910 [main] INFO  o.s.c.a.AnnotationConfigApplicationContext - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:48:16 CST 2016]; root of context hierarchy
+2016-05-18 23:48:18.324 [main] INFO  com.asynclife.wx.config.ReidsConfig - ---------->>>Redis connection info: host=127.0.0.1, port=6379
+2016-05-18 23:48:19.711 [main] INFO  wx.MenuTest - Started MenuTest in 3.776 seconds (JVM running for 4.787)
+2016-05-18 23:48:19.746 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: json str= {
+     "button":[
+	       {
+	           "name":"马上交易",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"我要投资",
+	               "url":"http://test.8dbank.com.cn:8899/index"
+	            }]
+	       },
+	       {
+	           "name":"我的帐号",
+	           "sub_button":[
+	           {
+	               "type":"view",
+	               "name":"注册绑定",
+	               "url":"http://test.8dbank.com.cn:8899/register"
+	            },
+	            {
+	               "type":"view",
+	               "name":"账户纵览",
+	               "url":"http://test.8dbank.com.cn:8899/account/view"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的借款",
+	               "url":"http://test.8dbank.com.cn:8899/account/borrow/list"
+	            },
+	            {
+	               "type":"view",
+	               "name":"我的投资",
+	               "url":"http://test.8dbank.com.cn:8899/account/invest/list"
+	            }
+	            ]
+	       },
+	       {
+	           "name":"关于我们",
+	           "sub_button":[
+	           {	
+	               "type":"view",
+	               "name":"选择我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/index"
+	            },
+	            {
+	               "type":"view",
+	               "name":"业务介绍",
+	               "url":"http://test.8dbank.com.cn:8899/about/guide"
+	            },
+	            {
+	               "type":"view",
+	               "name":"联系我们",
+	               "url":"http://test.8dbank.com.cn:8899/about/safe"
+	            },
+	            {
+	               "type":"view",
+	               "name":"网站公告",
+	               "url":"http://test.8dbank.com.cn:8899/about/notice"
+	            }]
+	       }
+       ]
+ }
+
+2016-05-18 23:48:20.796 [main] INFO  com.asynclife.wx.service.AccessTokenService - wx server return:{"access_token":"6Ne5kXf-8hFID2dj3P7tY2DGn3KT150QeyzptsiOaFmY7NsQsIWjd2xxABeitt6xkbuaFrHhfSRCRR-ygDETWfmpISaPbBAU5PUkpQmlHvDPwA_yJGUW5w7OoGYABHIoMDNcAGAGXH","expires_in":7200}
+2016-05-18 23:48:20.820 [main] INFO  com.asynclife.wx.service.AccessTokenService - access token=6Ne5kXf-8hFID2dj3P7tY2DGn3KT150QeyzptsiOaFmY7NsQsIWjd2xxABeitt6xkbuaFrHhfSRCRR-ygDETWfmpISaPbBAU5PUkpQmlHvDPwA_yJGUW5w7OoGYABHIoMDNcAGAGXH
+2016-05-18 23:48:20.864 [main] INFO  com.asynclife.wx.service.AccessTokenService - refresh token success
+2016-05-18 23:48:21.224 [main] DEBUG com.asynclife.wx.service.MenuService - create menu: return={"errcode":0,"errmsg":"ok"}
+2016-05-18 23:48:21.262 [Thread-3] INFO  o.s.c.a.AnnotationConfigApplicationContext - Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@245b4bdc: startup date [Wed May 18 23:48:16 CST 2016]; root of context hierarchy
